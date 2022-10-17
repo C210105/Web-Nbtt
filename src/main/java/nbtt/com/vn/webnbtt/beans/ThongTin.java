@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ThongTin {
     
-    private Integer so; // Stt 順番
+    private Integer soTT; // Stt 順番
     private String ten; // 名
     private String hangSanXuat; // 製
     private String loai;    // 種類

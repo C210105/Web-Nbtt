@@ -1,0 +1,1 @@
+INSERT INTO nbtt_thongtin(soTT, ten, hangSanXuat, loai, gia, ma, tacDung, tonKho) VALUES(1, "Yamayaki", "Nhật Bản", "Rượu", 2500000, "r100", "Rượu không thay thế thuôc chữa bệnh", 1);
