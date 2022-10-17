@@ -95,6 +95,7 @@
                         <label for="" class="form-label">Loại sản phẩm</label>
                         <select class="form-select" name="" id="">
                             <option selected>Chọn loại sản phẩm</option>
+                            <option th:each="SanPham : ${sanPhams}" th:value="${SanPham.maSP}" th:text="${SanPham.loaiSP}"></option>
                             <!-- <option th:each="ThongTinXuatXuSP : ${thongTinXuatXuSPs}" th:value="${ThongTinXuatXuSP.masp}" th:text="${ThongTinXuatXuSP.loaisp}"></option> -->
                         </select>
                     </div>
@@ -131,6 +132,18 @@
                           </tr>
                         </thead>
                         <tbody>
+                            <tr class="text-center" th:each="ThongTin : ${thongTins}">
+                                <td th:text="${ThongTin.soTT}"></td>
+                                <td th:text="${ThongTin.ten}"></td>
+                                <td th:text="${ThongTin.hangSanXuat}"></td>
+                                <td th:text="${ThongTin.loai}"></td>
+                                <td th:text="${ThongTin.gia}"></td>
+                                <td th:text="${ThongTin.ma}"></td>
+                                <td th:text="${ThongTin.tacDung}"></td>
+                                <td th:text="${ThongTin.tonKho}"></td>
+                                <!-- <td></td> -->
+
+                            </tr>
                           <!-- <tr class="text-center" th:each="ThongTinSP : ${thongTinSPs}">
                             <th scope="row" th:text="${ThongTinSP.masp}"></th>
                             <td th:text="${ThongTinSP.tensp}"></td>
